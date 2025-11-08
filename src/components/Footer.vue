@@ -1,14 +1,18 @@
 <template>
   <footer class="footer">
     <div class="footer-content">
+      <!-- Nome no lado esquerdo -->
       <div class="footer-name">
         <p>© 2025 Pedro Pereira</p>
       </div>
 
       <div class="footer-center"></div>
 
+      <!-- Ícones das redes sociais à direita -->
       <div class="footer-icons">
         <p class="redes-label">Redes Sociais:</p>
+
+        <!-- LinkedIn -->
         <a
           href="https://www.linkedin.com/in/pedro-pereira-793751a1/"
           target="_blank"
@@ -22,6 +26,7 @@
           </svg>
         </a>
 
+        <!-- GitHub -->
         <a
           href="https://github.com/pedromiguel78-source"
           target="_blank"
@@ -35,6 +40,7 @@
           </svg>
         </a>
 
+        <!-- Facebook -->
         <a
           href="https://www.facebook.com/pedro.pereira.52438174"
           target="_blank"
@@ -53,17 +59,19 @@
 </template>
 
 <script>
+// Exporta o componente para ser usado no App.vue
 export default {
-  name: "FooterApp",
+  name: "FooterApp", // Nome do componente
 };
 </script>
 
 <style scoped>
+/* === Estilos gerais do rodapé === */
 .footer {
   background-color: #87ceeb;
   color: white;
   padding: 1rem;
-  position: fixed;
+  position: fixed; /* fixa o rodapé ao fundo */
   bottom: 0;
   left: 0;
   right: 0;
@@ -71,14 +79,18 @@ export default {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* === Layout interno do footer === */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* nome à esquerda, ícones à direita */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding-right: 4rem; /* desloca os ícones mais para a direita */
+  padding-left: 1rem;
 }
 
+/* Nome do autor à esquerda */
 .footer-name {
   flex: 1;
   text-align: left;
@@ -89,24 +101,17 @@ export default {
   font-size: 0.9rem;
 }
 
-.footer-center {
-  flex: 1;
-  text-align: center;
-}
-
-.footer-center p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
+/* Secção dos ícones à direita */
 .footer-icons {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* alinha os ícones ao canto direito */
   gap: 1.5rem;
   align-items: center;
+  margin-right: 2rem;
 }
 
+/* Links dos ícones */
 .footer-icons a {
   color: white;
   text-decoration: none;
@@ -121,29 +126,26 @@ export default {
   opacity: 0.8;
 }
 
+/* Ícones SVG */
 .social-icon {
   width: 32px;
   height: 32px;
 }
 
+/* Texto “Redes Sociais” */
 .redes-label {
   margin: 0;
   font-size: 0.9rem;
   margin-right: 1rem;
 }
 
+/* === Responsividade para telemóveis === */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
-  }
-
-  .footer-name,
-  .footer-center,
-  .footer-icons {
-    flex: none;
-    text-align: center;
+    padding-right: 0;
   }
 
   .footer-icons {
