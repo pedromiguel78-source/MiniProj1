@@ -8,11 +8,11 @@
 
     <!-- Descrição da experiência e percurso profissional -->
     <p>
-      Sou Programador CAD/CAM e técnico de máquinas CNC, com mais de 30 anos de
-      experiência na programação e automatização de processos de fabrico.
-      Iniciei nesta área em 1993 como Técnico de Programação CNC e, desde 2015,
-      especializei-me em programação CAD/CAM para sistemas avançados de fabrico
-      maquinação com 5 eixos.
+      Sou Programador CAD/CAM e técnico de máquinas CNC, com experiência na
+      programação e automatização de processos de fabrico. Iniciei nesta área em
+      1993 como Técnico de Programação CNC e, desde 2015, especializei-me em
+      programação CAD/CAM para sistemas avançados de fabrico maquinação com 5
+      eixos.
     </p>
 
     <p>
